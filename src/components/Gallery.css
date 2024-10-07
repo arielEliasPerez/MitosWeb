@@ -1,0 +1,30 @@
+.gallery-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #000000;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.media-item img, 
+.media-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.media-item video {
+    height: 200px;
+}
