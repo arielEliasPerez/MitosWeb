@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Slideshow from "./Slideshow";
+import "./Home.css";
+
 const Home = () => {
     return (
         <div className="home-container">
+            <Slideshow />
             <section className="hero-section">
                 <h1>Bienvenido a Mitos Bar</h1>
                 <p>Donde la diversión y la música se encuentran.</p>
@@ -23,11 +27,11 @@ const Home = () => {
                 <h2>Nuestros Cocteles destacados</h2>
                 <div className="highlight-grid">
                     <div className="menu-item">
-                        <img src="../assets/images/photo1.jpg" alt="Cócteles destacados" />
+                        <img src='https://ik.imagekit.io/bhug69xts/mojito.png' alt="Cócteles destacados" />
                         <p>Mojito Clásico</p>
                     </div>
                     <div className="menu-item">
-                        <img src="../assets/images/photo2.jpg" alt="Cócteles destacados" />
+                        <img src="https://th.bing.com/th/id/OIP.kAEu4GDrouqfphQFrhSo2QHaHa?rs=1&pid=ImgDetMain" alt="Cócteles destacados" />
                         <p>Daikiris</p>
                     </div>
                 </div>
