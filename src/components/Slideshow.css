@@ -18,11 +18,15 @@
     text-align: center;
 }
 
+.slide.active {
+    opacity: 1;
+}
+
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(70%); /* Oscurece la imagen para que el texto sea más visible */
+    filter: brightness(70%);
 }
 
 .text {
@@ -40,6 +44,43 @@
 .text p {
     font-size: 1.5rem;
     margin-top: 10px;
+}
+
+/* Solo animar cuando la clase 'animate' esté presente */
+.text.animate h1 {
+    animation: slideTitleIn 0s ease-in-out forwards;
+}
+
+.text.animate p {
+    animation: slideSubtitleIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideTitleIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideSubtitleIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .slide.active {
